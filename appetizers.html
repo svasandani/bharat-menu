@@ -99,6 +99,7 @@ Appetizers
 </h1>
 
 <div id="vegetarian">
+
 <h2>
 Vegetarian
 </h2>
@@ -219,11 +220,50 @@ Vegetarian
 
 </div>
 
+<div id="soups">
+
+<h2>
+Soups
+</h2>
+
+<h3 class="alignleft2">
+<a href="images/chickencornsoup.jpg" class="lightbox_trigger">Chicken Corn Soup</a>
+</h3>
+<h3 class="alignright2">
+200
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft2">
+<a href="images/hotandsoursoup.jpg" class="lightbox_trigger">Hot and Sour Soup</a>
+</h3>
+<h3 class="alignright2">
+200
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft2">
+<a href="images/hotandsoursoupveg.jpg" class="lightbox_trigger">Hot and Sour Soup (Veg)</a>
+</h3>
+<h3 class="alignright2">
+150
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft2">
+<a href="images/tomatosoup.jpg" class="lightbox_trigger">Tomato Soup</a>
+</h3>
+<h3 class="alignright2">
+150
+</h3>
+<div style="clear: both;"></div>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
 
 <script>
+
 jQuery(document).ready(function($) {
 	
 	$('.lightbox_trigger').click(function(e) {
@@ -246,9 +286,8 @@ jQuery(document).ready(function($) {
 		*/
 		
 		if ($('#lightbox').length > 0) { // #lightbox exists
-			
-			//place href as img src value
-			$('#content').html('<img src="' + image_href + '" />');
+		
+			$('#content').html('<img src="' + image_href + '" onerror=\"alert(\'Sorry, we don\\\'t have an image for ' + image_name + ' yet.\');\" />');
 
 			//place text as image_name value
 			$('#heading').html('<h4>' + image_name + '</h4>');
