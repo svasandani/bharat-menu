@@ -260,6 +260,197 @@ Soups
 
 </div>
 
+<div id="nonvegetarian">
+
+<h2>
+Non-Vegetarian
+</h2>
+
+<h3 class="alignleft">
+<a href="images/roastedmutton.jpg" class="lightbox_trigger">Roasted Mutton</a>
+</h3>
+<h3 class="aligncenter">
+350
+</h3>
+<h3 class="alignright">
+550
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft">
+<a href="images/friedmutton.jpg" class="lightbox_trigger">Fried Mutton</a>
+</h3>
+<h3 class="aligncenter">
+350
+</h3>
+<h3 class="alignright">
+550
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft">
+<a href="images/roastedfish.jpg" class="lightbox_trigger">Roasted Fish</a>
+</h3>
+<h3 class="aligncenter">
+300
+</h3>
+<h3 class="alignright">
+500
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft">
+<a href="images/roastedchicken.jpg" class="lightbox_trigger">Roasted Chicken</a>
+</h3>
+<h3 class="aligncenter">
+250
+</h3>
+<h3 class="alignright">
+350
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft2">
+<a href="images/apollofish.jpg" class="lightbox_trigger">Apollo Fish</a>
+</h3>
+<h3 class="alignright2">
+350
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft">
+<a href="images/chilifish.jpg" class="lightbox_trigger">Chili Fish</a>
+</h3>
+<h3 class="aligncenter">
+250
+</h3>
+<h3 class="alignright">
+350
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft">
+<a href="images/chicken555.jpg" class="lightbox_trigger">Chicken 555</a>
+</h3>
+<h3 class="aligncenter">
+200
+</h3>
+<h3 class="alignright">
+300
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft">
+<a href="images/muttonsamosa.jpg" class="lightbox_trigger">Mutton Samosa</a>
+</h3>
+<h3 class="aligncenter">
+200
+</h3>
+<h3 class="alignright">
+300
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft2">
+<a href="images/chiliprawns.jpg" class="lightbox_trigger">Chili Prawns</a>
+</h3>
+<h3 class="alignright2">
+280
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft2">
+<a href="images/looseprawns.jpg" class="lightbox_trigger">Loose Prawns</a>
+</h3>
+<h3 class="alignright2">
+280
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft2">
+<a href="images/pepperprawns.jpg" class="lightbox_trigger">Pepper Prawns</a>
+</h3>
+<h3 class="alignright2">
+280
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft2">
+<a href="images/pepperchicken.jpg" class="lightbox_trigger">Pepper Chicken</a>
+</h3>
+<h3 class="alignright2">
+250
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft">
+<a href="images/chickenmajestic.jpg" class="lightbox_trigger">Chicken Majestic</a>
+</h3>
+<h3 class="aligncenter">
+175
+</h3>
+<h3 class="alignright">
+250
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft">
+<a href="images/chickensamosa.jpg" class="lightbox_trigger">Chicken Samosa</a>
+</h3>
+<h3 class="aligncenter">
+175
+</h3>
+<h3 class="alignright">
+250
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft">
+<a href="images/chilichicken.jpg" class="lightbox_trigger">Chili Chicken</a>
+</h3>
+<h3 class="aligncenter">
+175
+</h3>
+<h3 class="alignright">
+250
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft">
+<a href="images/chicken65.jpg" class="lightbox_trigger">Chicken 65</a>
+</h3>
+<h3 class="aligncenter">
+150
+</h3>
+<h3 class="alignright">
+230
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft">
+<a href="images/chickenmanchurian.jpg" class="lightbox_trigger">Chicken Manchurian</a>
+</h3>
+<h3 class="aligncenter">
+150
+</h3>
+<h3 class="alignright">
+230
+</h3>
+<div style="clear: both;"></div>
+
+<h3 class="alignleft">
+<a href="images/egg65.jpg" class="lightbox_trigger">Egg 65</a>
+</h3>
+<h3 class="aligncenter">
+120
+</h3>
+<h3 class="alignright">
+200
+</h3>
+<div style="clear: both;"></div>
+
+</div>
+
 <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
 
 <script>
@@ -304,7 +495,7 @@ jQuery(document).ready(function($) {
 				'<p>click anywhere to close</p>' +
 				'<div id="heading"><h4>' + image_name + '</h4></div>' + 
 				'<div id="content">' + //insert clicked link's href into img src
-					'<img src="' + image_href +'" />' +
+					'<img src="' + image_href + '" onerror=\"alert(\'Sorry, we don\\\'t have an image for ' + image_name + ' yet.\');\" />' +
 				'</div>' +	
 			'</div>';
 				
